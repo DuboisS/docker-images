@@ -1,6 +1,6 @@
 ARG PHP_VERSION=8.0
 
-FROM php:${PHP_VERSION}-fpm AS symforum_php
+FROM php:${PHP_VERSION}-fpm-alpine AS symforum_php
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
